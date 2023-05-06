@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tipografias -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="./img/iphone.png" class="icon">
+    <title>ServiPhone</title>
+    <!-- Toastify -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- mi css -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+   <header>
+    <div class="container">
+      <div class="row">
+
+      <div class="logo-fondo">
+        <div id="logo">
+            <img src="img/iphone.png" alt="logo de la pagina">
+           </div>
+      </div>
+        <div>
+            <h1 id="titulo">ServiPhone</h1>
+        </div>
+       
+                  <div class="two columns u-pull-right cart">
+                      <ul>
+                          <li class="submenu">
+                            <div class="carrito-logo">
+                                  <img src="img/carrito.png" id="img-carrito">
+                                </div>
+                                  <div id="carrito">
+                                          
+                                          <table id="lista-carrito" class="u-full-width">
+                                              <thead>
+                                                  <tr>
+                                                      <th>Imagen</th>
+                                                      <th>Nombre</th>
+                                                      <th>Precio</th>
+                                                      <th>Cantidad</th>
+                                                      
+                                                      <th></th>
+                                                      
+                                                  </tr>
+                                              </thead>
+                                              
+                                              <tbody></tbody>
+                                              
+                                          </table>
+                                          <hr>
+                                          
+                                       
+                                            <div class="botones-carrito">
+                                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                                <a href="#" id="comprar-todo"  class="button u-full-width">Comprar todo</a>
+                                            </div>
+                                        
+                                          
+                                  </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div> 
+          </div>
+        
+   </header>
+        
+
+
+   
+  
+    <main class="contenedor">
+        
+        <div class="grid" id="lista-cursos" >
+            <div class="producto">
+           <div class="imagen"> 
+            <img class="producto__imagen" src="img/cel.jpeg" alt="celular">
+           </div>
+            <div class="producto__informacion">
+                   <h4 class="producto__titulo">Motorola <span>Edge 30</span></h4>
+                   <p class="producto__precio">$399.000</p>
+            </div><!-- informacion -->
+            <div class="producto__boton">  
+            <button class="boton-carrito" data-id="1" > Agregar Carrito</button>
+            </div><!-- grid -->
+            </div><!-- producto -->
+
+            <div class="producto">
+                <img class="producto__imagen" src="img/samsung.jpeg" alt="celular">
+                <div class="producto__informacion">
+                    <h4 class="producto__titulo">Samsung </h4>
+                    <p class="producto__precio">$409.000</p>
+                </div><!-- informacion -->
+                <div class="producto__boton">  
+                    <button class="boton-carrito"  data-id="2" > Agregar Carrito</button> 
+                </div><!-- grid -->
+                </div><!-- producto -->
+
+                <div class="producto">
+                    <img class="producto__imagen" src="img/samsungA33.jpeg" alt="celular">
+                    <div class="producto__informacion">
+                        <h4 class="producto__titulo">Samsung <span>A 33</span></h4>
+                        <p class="producto__precio">$599000</p>
+                    </div><!-- informacion -->
+                    <div class="producto__boton">  
+                        <button class="boton-carrito" data-id="3" > Agregar Carrito</button>
+                    </div><!-- grid -->
+                    </div><!-- producto -->
+
+                    <div class="producto">
+                        <img class="producto__imagen" src="img/samsungA53.jpeg" alt="celular">
+                        <div class="producto__informacion">
+                            <h4 class="producto__titulo">Samsung <span>A 53</span></h4>
+                            <p class="producto__precio">$540.000</p>
+                        </div><!-- informacion -->
+                        <div class="producto__boton">  
+                            <button class="boton-carrito" data-id="4" > Agregar Carrito</button>
+                        </div><!-- grid -->
+                        </div><!-- producto -->
+
+                        <div class="producto">
+                            <img class="producto__imagen" src="img/samsungS22celeste.jpeg" alt="celular">
+                            <div class="producto__informacion">
+                                <h4 class="producto__titulo">Samsung <span>S22</span></h4>
+                                <p class="producto__precio">$430.000</p>
+                            </div><!-- informacion -->
+                            <div class="producto__boton">  
+                                <button class="boton-carrito" data-id="5" > Agregar Carrito</button>
+                            </div><!-- grid -->
+                            </div><!-- producto -->
+
+                            <div class="producto">
+                                <img class="producto__imagen" src="img/samsungS22yellow.jpeg" alt="celular">
+                                <div class="producto__informacion">
+                                    <h4 class="producto__titulo">Samsung <span>S22</span></h4>
+                                        <p class="producto__precio">$430.000</p>
+                                </div><!-- informacion -->
+                                <div class="producto__boton">  
+                                    <button class="boton-carrito" data-id="6" > Agregar Carrito</button>
+                                </div><!-- grid -->
+                                </div><!-- producto -->
+
+                                <div class="producto">
+                                    <img class="producto__imagen" src="img/samunsgS21.jpeg" alt="celular">
+                                    <div class="producto__informacion">
+                                        <h4 class="producto__titulo"> Samsung <span>S21</span></h4>
+                                        <p class="producto__precio">$399.000</p>
+                                    </div><!-- informacion -->
+                                    <div class="producto__boton">  
+                                        <button class="boton-carrito"  data-id="7" > Agregar Carrito</button>
+                                    </div><!-- grid -->
+                                    </div><!-- producto -->
+
+                                    <div class="producto">
+                                        <img class="producto__imagen" src="img/samunsungS22ROSA.jpeg" alt="celular">
+                                        <div class="producto__informacion">
+                                            <h4 class="producto__titulo">samsung <span>S22</span></h4>
+                                            <p class="producto__precio">$430.000</p>
+                                        </div><!-- informacion -->
+                                        <div class="producto__boton">  
+                                            <button class="boton-carrito" data-id="8" > Agregar Carrito</button>
+                                        </div><!-- grid -->
+                                        </div><!-- producto -->
+
+
+                                        <div class="producto">
+                                            <img class="producto__imagen" src="img/tcl.jpeg" alt="celular">
+                                            <div class="producto__informacion">
+                                                <h4 class="producto__titulo">TCL</h4>
+                                                <p class="producto__precio">$30.000</p>
+                                            </div><!-- informacion -->
+                                            <div class="producto__boton">  
+                                                <button class="boton-carrito"  data-id="9" > Agregar Carrito</button>
+                                            </div><!-- grid -->
+                                            </div><!-- producto -->
+
+                                           
+
+
+
+
+        </div><!-- grid -->
+    </main>
+
+
+    <footer>
+        <div class="redes-sociales">
+           
+      
+                <img class="icono-footer" src="./img/facebook.png" alt="">
+                
+            <img class="icono-footer" src="./img/instagram.png" alt="">
+             <img class="icono-footer" src="./img/youtube.png" alt="">
+        </div>
+    </footer>
+
+
+
+
+<!-- libreria -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<!-- Toastify -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<!-- mi js -->
+    <script src="/js/script.js"></script>
+</body>
+</html>

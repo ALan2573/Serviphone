@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    max-height: 100vh;
+
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+header {
+    height: 10rem;
+    background-color: rgb(47, 130, 181);
+}
+
+.row {
+    padding-top: 6px;
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+}
+.centrar{
+    text-align: center;
+}
+
+.imagen-carrito {
+    width: 70px;
+    border-radius: 7px;
+}
+
+
+.borrar-curso{
+    display: inline-block;
+    background-color: red;
+    height: 30px;
+    text-align: center;
+    width: 30px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+/* logo */
+#logo{
+   
+    width:  80%;
+}
+.logo-fondo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(206, 201, 201);
+    border-radius: 100px;
+}
+#logo img {
+    max-width: 90%;
+    padding-left: 10px;
+}
+
+/* carrito */
+.cart{
+    padding-bottom: 40px;
+}
+
+#img-carrito {
+    color: white;
+    width: 40px;
+    
+}
+imagen-carrito{
+    width: 100px;
+    border-radius: 5px;
+}
+header{
+    margin-bottom: 20px;
+}
+
+#titulo{
+    color: rgb(223, 226, 228);
+    font-family: 'Rowdies', cursive;
+    letter-spacing: 6px;
+    
+}
+#vaciar-carrito, #comprar-todo { 
+    display: block;
+    /* margin-left: 120px; */
+    background-color: rgb(119, 49, 49);
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 12px;
+    height: 30px;
+    width: 120px;
+}
+#comprar-todo {
+
+    background-color: rgb(40, 50, 86);
+
+}
+
+ul li {
+    list-style: none;
+}
+
+.botones-carrito{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* titulo */
+h1 {
+    text-align: center;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+}
+
+.producto {
+   
+    width: 360px;
+    margin: 20px 10px 30px 140px;
+    border-radius: 2rem;
+    border: 2px solid;
+    
+}
+.producto__informacion , .producto__boton{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.producto__titulo{
+    font-size: 20px;
+}
+
+
+.producto__imagen {
+   
+    max-width: 100%;
+    border-radius: 1.7rem 1.7rem 0rem 0rem;
+
+}
+
+
+
+
+
+/* media queries */
+@media (min-width: 1545px) {
+ 
+
+    .grid {
+        
+        grid-template-columns: 1fr  1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr ;
+    }
+
+
+}
+
+
+
+@media (max-width: 1070px) {
+    .grid {
+        
+        grid-template-columns: 1fr  1fr;
+        grid-template-rows: 1fr 1fr  ;
+    }
+
+    .producto {
+        
+        width: 50%;
+        margin: 10px 10px 10px 140px;
+        
+    }
+}
+
+@media (max-width:766px) {
+   
+    .grid {
+        
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr  ;
+    }
+    .producto {
+        
+        width: 50%;
+        margin-right: 25%;
+        margin-left: 25%;
+        
+    }
+
+   .cart {
+    margin-right: 20px;
+   }
+    #img-carrito {
+        
+        width: 30px;
+        
+    }
+    imagen-carrito{
+        width: 35px;
+       
+       
+    }
+   
+    
+    #titulo{
+        
+        font-size: larger;
+        
+    }
+    #logo{
+
+        width:  80%;
+    }
+    .logo-fondo{
+       
+        width: 60px;
+        height: 60px;
+       
+    }
+  
+   
+    
+    
+}
+
+
+
+button {
+    margin-top: 5px;
+    cursor: pointer;
+    height: 30px;
+    width: 70%;
+    color: white;
+    background-color: rgb(40, 50, 86);
+    border-radius: 2rem;
+}
+
+
+
+
+/* Submenu */
+
+.submenu {
+    position: absolute;
+   
+}
+
+.submenu #carrito{
+    display: none;
+    
+
+    
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+    color: black;
+    top:100%;
+    z-index: 1;
+    background-color: rgb(228, 227, 227);
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+#lista-carrito tr th{
+    padding-right: 20px;
+}
+
+
+
+
+
+/* footer */
+.icono-footer{
+    width: 40px;
+    margin: 0px 0px 10px 10px;
+}
+.redes-sociales {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+   
+    padding-top: 10px;
+    height: 60px;
+    background-color: rgb(47, 130, 181);
+}
